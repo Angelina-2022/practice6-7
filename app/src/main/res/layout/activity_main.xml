@@ -6,33 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/телефон"
-        android:layout_width="73dp"
-        android:layout_height="33dp"
-        android:rotationX="-16"
-        android:text="телефон"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone2"
-        app:layout_constraintStart_toStartOf="@+id/пароль"
-        app:layout_constraintTop_toBottomOf="@+id/пароль"
-        app:layout_constraintVertical_bias="0.517" />
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="201dp" />
 
-    <TextView
-        android:id="@+id/пароль"
-        android:layout_width="69dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="28dp"
-        android:text="пароль"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="1.0" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="24dp"
+        android:text="Button"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/пароль" />
 
     <EditText
         android:id="@+id/editTextPhone2"
         android:layout_width="259dp"
         android:layout_height="47dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
@@ -44,39 +44,46 @@
         android:id="@+id/button2"
         android:layout_width="133dp"
         android:layout_height="58dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="войти"
         app:layout_constraintEnd_toEndOf="@+id/radioButton"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/radioButton"
         app:layout_constraintTop_toBottomOf="@+id/radioButton" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="135dp"
-        android:layout_height="57dp"
-        android:text="Button"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
-        app:layout_constraintStart_toStartOf="@+id/пароль"
-        tools:layout_editor_absoluteY="68dp" />
+    <TextView
+        android:id="@+id/пароль"
+        android:layout_width="69dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:text="пароль"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.928" />
 
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="254dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="phone"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="142dp" />
+    <TextView
+        android:id="@+id/телефон"
+        android:layout_width="67dp"
+        android:layout_height="31dp"
+        android:rotationX="-16"
+        android:text="телефон"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPhone2"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/пароль"
+        app:layout_constraintTop_toBottomOf="@+id/пароль"
+        app:layout_constraintVertical_bias="1.0" />
 
     <RadioButton
         android:id="@+id/radioButton"
         android:layout_width="360dp"
         android:layout_height="35dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="RadioButton"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone2"
-        tools:layout_editor_absoluteX="28dp" />
+        tools:layout_editor_absoluteX="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
